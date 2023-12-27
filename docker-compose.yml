@@ -1,0 +1,21 @@
+---
+version: "3.8"
+services:
+  vishnu:
+    image: vishnu155/vishnu:latest
+    ports:
+      - 81:80
+    deploy:
+      replicas: 3
+  kiran:
+    image: vishnu155/kiran:latest
+    ports:
+      - 82:80
+    deploy:
+      replicas: 3
+  vinod:
+    image: vishnu155/vinod:latest
+    ports:
+      - 83:80
+    deploy:
+      replicas: 3
